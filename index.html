@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags essenciais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refino | Premium Construction & Home Renovation Services</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Refino Construction - We build where love plans to live. Premium home renovations, kitchen remodeling, bathroom upgrades, and full home transformations with intention and craftsmanship.">
+    <meta name="keywords"
+        content="construction, renovation, kitchen remodeling, bathroom renovation, home improvement, custom homes, interior design">
+    <meta name="author" content="Refino Construction">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Refino | Premium Construction & Home Renovation">
+    <meta property="og:description"
+        content="We build where love plans to live. Transform your space with intention, craftsmanship, and care.">
+    <meta property="og:image" content="/assets/og-image.jpg">
+    <meta property="og:url" content="https://refinoconstruction.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Refino Construction">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Refino | Premium Construction & Home Renovation">
+    <meta name="twitter:description"
+        content="We build where love plans to live. Transform your space with intention and craftsmanship.">
+    <meta name="twitter:image" content="/assets/twitter-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="./assets/refino-web-2.mp4" as="video" type="video/mp4">
+    <link rel="preload" href="./assets/Logotipo - 07.png" as="image">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Schema.org JSON-LD for Local Business -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "GeneralContractor",
+        "name": "Refino Construction",
+        "description": "Premium construction and home renovation services",
+        "url": "https://refinoconstruction.com",
+        "logo": "https://refinoconstruction.com/assets/Logotipo - 07.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Service",
+            "telephone": "+1-XXX-XXX-XXXX"
+        },
+        "areaServed": {
+            "@type": "Place",
+            "name": "Your City, State"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Construction Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Kitchen Remodeling"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Bathroom Renovation"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav id="nav-bar" class="navbar navbar-expand-lg navbar-dark bg-black text-terra fixed-top"
+        aria-label="Main navigation">
+        <div class="container-fluid">
+            <a href="#home" class="navbar-brand">
+                <img class="logo-navbar" src="assets/logotipo-refino-nav.svg"
+                    alt="Refino Construction Company Logo - Home" width="auto" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Hero Section -->
+    <main id="main-content" class="main-section" role="main">
+        <section id="home" class="container-vd" aria-labelledby="hero-title">
+            <!-- Mobile Hero Title -->
+            <div class="title-home-mobile" aria-hidden="true">
+                <h1 id="hero-title-mobile" class="visually-hidden">We Build Where Love Plans To Live</h1>
+                <div aria-hidden="true">WE BUILD</div>
+                <div aria-hidden="true">WHERE</div>
+                <div aria-hidden="true">LOVE PLANS</div>
+                <div aria-hidden="true">TO LIVE</div>
+                <a href="tel:+14074738439" target="_blank">
+                    <button class="btt-mobile" type="button" aria-label="Contact us to discuss your project">
+                        Let's talk
+                    </button>
+                </a>
+            </div>
+
+            <!-- Video Container with Mask -->
+            <div class="mascara-svg" role="img" aria-label="Construction and renovation showcase video">
+                <!-- Desktop Hero Content -->
+                <div class="info-home">
+                    <div class="title-home">
+                        <h1 id="hero-title" class="visually-hidden">We Build Where Love Plans To Live</h1>
+                        <div aria-hidden="true">WE BUILD</div>
+                        <div aria-hidden="true">WHERE</div>
+                        <div aria-hidden="true">LOVE PLANS TO</div>
+                        <div class="last-line">
+                            <span aria-hidden="true">LIVE.</span>
+                            <a href="tel:+14074738439" target="_blank">
+                                <button class="btt" type="button" aria-label="Contact us to discuss your project">
+                                    Let's talk
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <img class="base" src="assets/base-mold-web.svg" alt=""> -->
+
+                <!-- Hero Video -->
+                <video class="home-video" src="./assets/refino-web-2.mp4" autoplay loop muted playsinline
+                    preload="metadata" aria-label="Refino construction work showcase video">
+                    <p>Your browser doesn't support video. <a href="./assets/refino-web-2.mp4">Download the video</a>
+                        instead.</p>
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <!-- About Section -->
+    <section id="about" class="page-2" aria-labelledby="about-title">
+        <div class="page-2-div">
+            <h2 id="about-title" class="title">
+                To Refine Is to <br aria-hidden="true"> Build With Intention
+            </h2>
+            <div class="text" role="region" aria-labelledby="about-title">
+                <p>At Refino, building is an act of attention.</p>
+
+                <p>It's about seeing potential where others see stillness. It's about listening to what hasn't yet been
+                    said and turning that into space, light, and welcome. We don't just deliver renovations. We create
+                    environments that reflect the lives of those who'll live in them.</p>
+
+                <p>Each project begins with care, guided by craftsmanship, connection, and intention. Nothing here is
+                    rushed or random everything is built to last, to belong, to make sense.</p>
+
+                <p>We're not in the business of transforming properties.</p>
+
+                <p>We're here to shape places where people feel at home. Because when care is the foundation, the result
+                    is always more than structure.</p>
+            </div>
+        </div>
+
+        <!-- Services Accordion -->
+        <div class="page-2-div">
+            <div class="black-box">
+                <div class="accordion acc-boxe" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button acc-tt acc-boxe" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Kitchen Remodeling
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body acc-txt acc-boxe">
+                                From layout redesigns to cabinet installations, countertops, and modern appliances — we
+                                create functional, beautiful kitchens that suit your lifestyle.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed acc-tt acc-boxe" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                Bathroom Remodeling
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body acc-txt acc-boxe">
+                                Full bathroom renovations including tile work, custom showers, vanities, plumbing, and
+                                lighting — all tailored to your taste and space.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed  acc-tt acc-boxe" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Full Home Renovations
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body acc-txt acc-boxe">
+                                Transform your entire living space with coordinated design and construction services,
+                                including structural changes and custom finishes.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed acc-tt acc-boxe" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseFour">
+                                Flooring Installation
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body acc-txt acc-boxe">
+                                Hardwood, tile, vinyl, or laminate — we help you choose and install the perfect flooring
+                                for
+                                durability and style.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed acc-tt acc-boxe" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                aria-controls="collapseFive">
+                                Interior Upgrades
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body acc-txt acc-boxe">
+                                Drywall, painting, lighting, and custom carpentry to refresh your interiors with a
+                                modern, polished look.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="gallery-section">
+        <div class="car-container">
+            <div id="carousel-one" class="carousel slide carousel-page" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/001.webp" alt="img-1">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/002.webp" alt="img-2">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/003.webp" alt="img-3">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/004.webp" alt="img-4">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/005.webp" alt="img-5">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/006.webp" alt="img-6">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/007.webp" alt="img-7">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/008.webp" alt="img-8">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/009.webp" alt="img-9">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/010.webp" alt="img-10">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/011.webp" alt="img-11">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/012.webp" alt="img-12">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/013.webp" alt="img-13">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/014.webp" alt="img-14">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/015.webp" alt="img-15">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/016.webp" alt="img-16">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/017.webp" alt="img-17">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/018.webp" alt="img-18">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/019.webp" alt="img-19">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/020.webp" alt="img-20">
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-one" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-one" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div id="carousel-two" class="carousel slide carousel-page" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/024.webp" alt="img-1">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/025.webp" alt="img-3">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/026.webp" alt="img-4">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/027.webp" alt="img-5">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/028.webp" alt="img-6">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/029.webp" alt="img-7">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/030.webp" alt="img-9">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/031.webp" alt="img-10">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/032.webp" alt="img-11">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/033.webp" alt="img-12">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/034.webp" alt="img-13">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/035.webp" alt="img-14">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/036.webp" alt="img-15">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/037.webp" alt="img-16">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/038.webp" alt="img-17">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/039.webp" alt="img-18">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/040.webp" alt="img-19">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/041.webp" alt="img-20">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img-wrapper">
+                            <img src="assets/img/042.webp" alt="img-21">
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-two" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-two" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="review">
+        <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-144c3e16-1049-4b5d-bc8e-c9b974efc2ac" data-elfsight-app-lazy></div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2 class="title-cont">Let’s Plan Your Space Together</h2>
+        </div>
+        <div class="form">
+            <form action="https://formspree.io/f/xwpqrlyj" method="POST" class="contact-form" target="_blank">
+                <div class="form-name">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="first-name" placeholder="First name"
+                            name="first-name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="last-name" placeholder="Last name" name="last-name"
+                            required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="message" name="message" placeholder="Write a message..." rows="4"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btt-contact">Let It Reach Us</button>
+            </form>
+        </div>
+
+    </section>
+
+    <section id="info" class="info-section">
+        <div class="logo-footer">
+            <img src="assets/logotipo-refino-bg-white.svg" alt="Logotipo Refino">
+        </div>
+        <div class="social-media">
+            <a href="mailto:teus.trovatto@gmail.com" class="link">
+                <img src="assets/mail.svg" alt="Ícone de E-mail">
+            </a>
+
+            <a href="tel:+14074738439" class="link">
+                <img src="assets/phone.svg" alt="Ícone de Telefone">
+            </a>
+
+            <a href="https://www.instagram.com/refino.construction" target="_blank" rel="noopener noreferrer"
+                class="link">
+                <img src="assets/instagram.svg" alt="Ícone do Instagram">
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=61578264977181" target="_blank" rel="noopener noreferrer"
+                class="link">
+                <img src="assets/facebook.svg" alt="Ícone do Facebook">
+            </a>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>created for Dom Digital Group</p>
+    </section>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <!-- Performance and Analytics -->
+    <script src="./script_performance"></script>
+
+
+</body>
+
+</html>

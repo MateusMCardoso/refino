@@ -1,0 +1,727 @@
+/* ==========================================================================
+   RESET & BASE STYLES
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    color: var(--black);
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   CSS CUSTOM PROPERTIES (VARIABLES)
+   ========================================================================== */
+
+:root {
+    --black: #000000;
+    --green: #496046;
+    --terra: #a84e2b;
+    --bege: #c8c0ad;
+    --white: #f3e8dd;
+}
+
+/* ==========================================================================
+   UTILITY CLASSES - COLORS
+   ========================================================================== */
+
+.black {
+    color: var(--black);
+}
+
+.green {
+    color: var(--green);
+}
+
+.terra {
+    color: var(--terra);
+}
+
+.bege {
+    color: var(--bege);
+}
+
+.white {
+    color: var(--white);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-green {
+    background-color: var(--green);
+}
+
+.bg-terra {
+    background-color: var(--terra);
+}
+
+.bg-bege {
+    background-color: var(--bege);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+/* ==========================================================================
+   NAVIGATION COMPONENTS
+   ========================================================================== */
+
+.logo-navbar {
+    height: 30px;
+    width: auto;
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: var(--terra);
+    font-size: 15px;
+}
+
+/* ==========================================================================
+   MAIN SECTION - HOME
+   ========================================================================== */
+
+.main-section {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--terra);
+    overflow: hidden;
+}
+
+/* .container-vd{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+}
+
+.base{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 10px;
+    height: auto;
+    z-index: 1;
+}
+
+
+.home-video {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+} */
+
+/* ==========================================================================
+   VIDEO & MASK COMPONENTS
+   ========================================================================== */
+.container-vd {
+    padding-top: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.mascara-svg {
+    position: relative;
+    width: 80%;
+    height: auto;
+    mask-image: url('/assets/forma-mask_1.svg');
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-image: url('/assets/forma-mask_1.svg');
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.home-video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ==========================================================================
+   HOME CONTENT - DESKTOP VERSION
+   ========================================================================== */
+
+.info-home {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    width: 46%;
+    height: auto;
+    flex-shrink: 0;
+    left: 4%;
+    bottom: 10%;
+}
+
+.title-home {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter, sans-serif;
+    font-size: clamp(2rem, 4vw, 5rem);
+    font-weight: 900;
+    color: #D9D9D9;
+    text-transform: uppercase;
+    line-height: 0.9;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter, sans-serif;
+    font-size: clamp(4rem, 6vw, 5rem);
+    font-weight: 900;
+    color: #D9D9D9;
+    line-height: 0.9;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    align-self: flex-start;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter, sans-serif;
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
+    font-weight: 400;
+    color: var(--bege);
+    line-height: 1.2;
+    margin: 0;
+    margin-top: 40px;
+    padding: 0;
+}
+
+/* ==========================================================================
+   HOME CONTENT - MOBILE VERSION
+   ========================================================================== */
+
+.title-home-mobile {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    font-family: Inter, sans-serif;
+    font-size: clamp(2.8rem, 10vw, 6rem);
+    font-weight: 900;
+    color: #D9D9D9;
+    text-transform: uppercase;
+    line-height: 1;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    z-index: 10;
+}
+
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+
+.btt {
+    padding: 1.2rem 1.8rem;
+    background: var(--bege);
+    color: var(--green);
+    border-radius: 8px;
+    border: none;
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 1rem;
+    cursor: pointer;
+    translate: 0 -6px;
+}
+
+.btt:hover {
+    background: var(--green);
+    color: var(--bege);
+}
+
+.btt-mobile {
+    width: 20vw;
+    height: 6vw;
+    padding: 0;
+    background: var(--bege);
+    color: var(--green);
+    border-radius: 8px;
+    border: none;
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 2vw;
+    cursor: pointer;
+    margin-top: 0.6rem;
+}
+
+.btt-contact {
+    height: 2.5rem;
+    padding: 0 1.5rem;
+    background: var(--bege);
+    color: var(--green);
+    border-radius: 8px;
+    border: none;
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 0.8vw;
+    cursor: pointer;
+    translate: 0 -6px;
+}
+
+.btt-contact:hover {
+    background: var(--green);
+    color: var(--bege);
+}
+
+.last-line {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+/* ==========================================================================
+   PAGE 2 SECTION
+   ========================================================================== */
+
+.page-2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 6%;
+    justify-content: center;
+    align-items: center;
+    background: var(--terra);
+    overflow: hidden;
+}
+
+.black-box {
+    padding: 10%;
+    width: 100%;
+    height: 70%;
+    background-color: var(--terra);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.page-2-div {
+    margin: 2%;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==========================================================================
+   PAGE 3 Gallery
+   ========================================================================== */
+
+.gallery-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--terra);
+}
+
+.car-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-inner,
+.carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-img-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* ou "contain" se quiser que a imagem não corte */
+    object-position: center;
+}
+
+
+/* ==========================================================================
+   PAGE 5 Review
+   ========================================================================== */
+
+   .review {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--black);
+    padding: 5%;
+}
+
+/* ==========================================================================
+   PAGE 6 Contact
+   ========================================================================== */
+.contact-section {
+    gap: 2rem;
+    padding: 10%;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: var(--terra);
+}
+
+.contact-container {
+    width: 60%;
+    height: auto;
+}
+
+.title-cont {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter, sans-serif;
+    font-size: clamp(4rem, 6vw, 5rem);
+    font-weight: 900;
+    color: #D9D9D9;
+    line-height: 0.9;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    align-self: flex-start;
+}
+
+.form-name {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
+/* ==========================================================================
+   PAGE 6 Medias
+   ========================================================================== */
+
+.info-section {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    justify-content: space-around;
+    background: var(--bege);
+}
+
+.logo-footer {
+    width: 100px;
+    height: auto;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.link {
+    cursor: pointer;
+}
+
+
+.link img {
+    width: 32px;
+    height: 32px;
+}
+
+.link:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--bege);
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--black);
+    color: var(--bege);
+    font-family: Inter, sans-serif;
+    font-size: 0.6rem;
+}
+
+/* ==========================================================================
+   ACCORDION COMPONENTS
+   ========================================================================== */
+
+.acc-boxe {
+    width: 100%;
+}
+
+.acc-txt {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter, sans-serif;
+    font-size: clamp(0.9rem, 1vw, 1.2rem);
+    font-weight: 400;
+    color: var(--black);
+    line-height: 1.2;
+    margin: 0;
+    padding: 10px;
+}
+
+.acc-tt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: Inter, sans-serif;
+    font-size: clamp(1rem, 1.2vw, 1.4rem);
+    font-weight: 600;
+    color: var(--terra);
+    line-height: 1.2;
+    margin: 0;
+    padding: 10px;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--terra);
+    outline: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--white);
+    color: var(--green);
+}
+
+/* ==========================================================================
+   BREAKPOINTS ESPECÍFICOS PARA MOBILE (MAX-WIDTH)
+   ========================================================================== */
+
+@media (max-width: 1400px) {
+    .btt {
+        padding: 0.6rem 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .btt {
+        padding: 0.4rem 1.5rem;
+        translate: 0 -4px;
+    }
+}
+
+@media (max-width: 767px) {
+    .page-2 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        justify-content: center;
+        align-items: center;
+        background: var(--terra);
+    }
+
+    .container-vd {
+        position: relative;
+        display: flex;
+        padding-top: 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .title-home {
+        font-size: 3rem;
+    }
+
+    .title-home-mobile {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        font-family: Inter, sans-serif;
+        font-size: clamp(2.8rem, 10vw, 6rem);
+        font-weight: 900;
+        color: #D9D9D9;
+        text-transform: uppercase;
+        line-height: 1;
+        margin-top: 100px;
+        width: 80%;
+        z-index: 10;
+    }
+
+    .info-home {
+        display: none;
+    }
+
+    .btt {
+        width: 100%;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .btt-mobile {
+        width: 80%;
+        height: 8vw;
+        font-size: 3vw;
+    }
+
+    .home-video {
+        width: 180%;
+    }
+
+    .mascara-svg {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        width: 100%;
+        mask-image: url('/assets/forma-mask-2.svg');
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        -webkit-mask-image: url('/assets/forma-mask-2.svg');
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .gallery-section {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--terra);
+    }
+
+    .car-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding-top: 10%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .carousel-page {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carousel-inner,
+    .carousel-item {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel-img-wrapper {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .title-cont {
+        font-size: clamp(2.8rem, 3vw, 3rem);
+        width: 100%;
+    }
+
+    .btt-contact {
+        width: 100%;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+@media (max-width: 520px) {
+    .page-2 {
+        padding-top: 100px
+    }
+
+    .contact-section {
+        padding: 10%;
+        height: auto;
+    }
+}

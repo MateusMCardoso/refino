@@ -1,0 +1,13 @@
+       // Lazy load non-critical resources
+        window.addEventListener('load', function () {
+            // Add any analytics or tracking code here
+            console.log('Page fully loaded');
+        });
+
+        // Video optimization
+        const video = document.querySelector('.home-video');
+        if (video) {
+            video.addEventListener('canplaythrough', function () {
+                video.style.opacity = '1';
+            });
+        }
